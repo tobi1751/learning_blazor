@@ -1,0 +1,32 @@
+@page "/tasker"
+@using tasker.Components.TaskerLine
+@using tasker.Models
+@using System.Text.Json
+@using System.Text.Json.Serialization
+
+@inject IJSRuntime JS;
+
+<div class="container">
+    <div class="group">
+        <img src="/images/Logo.png" alt="Logo" />
+    </div>
+    <div class="group">
+        <EditForm Model="taskerItem" OnSubmit="addTask">
+            <DataAnnotationsValidator />
+            <div class="input-container">
+                <InputText @ref=textBoxTask class="taskInput" placeholder="enter a task" @bind-Value="taskerItem.Name" />
+                <button type="submit">Add</button>
+            </div>
+            <div>
+                <ValidationMessage for="() => taskerItem.Name" />
+            </div>
+        </EditForm>
+    </div>
+    <hr />
+    <div class="group">
+        @foreach (var task in taskerItemsList)
+        {
+            <TaskerLine Item="task" OnDeleteCallBack="@deleteTask" OnUpdateCallBack="updateItem" />
+        }
+    </div>
+</div>

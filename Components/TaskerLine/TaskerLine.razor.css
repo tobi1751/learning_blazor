@@ -1,0 +1,29 @@
+
+.tasker-line {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr) 40px;
+    align-items: center;
+    width: 300px;
+    max-width: 100%;
+}
+
+.left {
+    justify-self: start;
+}
+
+.center {
+    justify-self: center;
+}
+
+.right {
+    justify-self: end;
+}
+
+.trash-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.completed {
+    text-decoration: line-through;
+}

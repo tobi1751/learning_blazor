@@ -1,0 +1,11 @@
+div{
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.success{
+    background-color: green;
+}
+.fails{
+    background-color: red;
+}

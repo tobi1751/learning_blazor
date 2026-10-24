@@ -1,0 +1,13 @@
+<div class="tasker-line">
+    <div class="left">
+        <InputCheckbox @bind-Value="Item!.IsComplete" @bind-Value:after="updateItem" />    
+    </div>
+    <div class="center @completed">
+        @Item.Name
+    </div>
+    <div class="right">
+        <a @onclick="deleteItem">
+            <img class="trash-icon" src="images/trash-bin.svg" alt="Delete" />
+        </a>
+    </div>
+</div>

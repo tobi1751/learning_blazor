@@ -1,0 +1,23 @@
+@page "/reverseastring"
+@using tasker.Components.Message
+
+<PageTitle>Reverse A string</PageTitle>
+<h3>ReverseAString</h3>
+<div>
+    <input type="text" @bind-value="@message">
+    <button @onclick="ReverseMe">Reverse the text</button>
+    <button @onclick="ClearMe">clear</button>
+    <hr>
+    <div>
+        @if (reversedMessage != "")
+        {
+            @if (IsPalindrome)
+            {
+                <Message DisplayMessage="@reversedMessage" Title="palindrome" CssClass="success" />
+            } else
+            {
+                <Message DisplayMessage="@reversedMessage" Title="not a palindrome" CssClass="fails" />
+            }
+        }
+    </div>
+</div>

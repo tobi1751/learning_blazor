@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.group{
+    padding-top: 15px;
+}
+
+img{
+    width: 300px;
+}
+
+.input-container ::deep .taskInput{
+    padding: 10px;
+    border-radius: 10px;
+}
+button{
+    padding: 10px;
+}
+hr{
+    height: 2px;
+    width: 300px;
+}

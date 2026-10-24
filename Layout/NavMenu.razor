@@ -9,19 +9,34 @@
 
 <div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
     <nav class="nav flex-column">
-        <div class="nav-item px-3">
+        <div class="homeLink">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+                <img src="images/ant-design--home-filled.svg" alt=""> 
+                <span>Home</span>
             </NavLink>
         </div>
-        <div class="nav-item px-3">
+        <div class="homeLink">
             <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+                <img src="images/counter.svg" alt=""> 
+                <span>Counter</span>
             </NavLink>
         </div>
-        <div class="nav-item px-3">
+        <div class="homeLink">
             <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
+                <img src="images/weather.svg" alt=""> 
+                <span>weather</span>
+            </NavLink>
+        </div>
+        <div class="homeLink">
+            <NavLink class="nav-link" href="reverseastring">
+                <img src="images/line-flip.svg" alt=""> 
+                <span>Recerse A String</span>
+            </NavLink>
+        </div>
+        <div class="homeLink">
+            <NavLink class="nav-link" href="tasker">
+                <img src="images/line-flip.svg" alt=""> 
+                <span>Tasker</span>
             </NavLink>
         </div>
     </nav>
